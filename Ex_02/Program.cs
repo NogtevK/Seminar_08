@@ -31,7 +31,8 @@ if (mass.GetLength(0) == mass.GetLength(1))
 {
     for (int i = 0; i < mass.GetLength(0); i++)
     {
-        for (int j =i+1; j <mass.GetLength(1); j++)
+        for (int j =0; j <=i; j++)
+        /* for (int j =i+1; j <mass.GetLength(1); j++) */ //second Solution
         {
             element = mass[i, j];
             mass[i, j] = mass[j, i];
